@@ -1,0 +1,4 @@
+; $Id$
+name = "restrict_customer"
+description = "A simple module that restrict user to enter the site from root address"
+core = 6.x

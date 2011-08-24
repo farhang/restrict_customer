@@ -1,0 +1,24 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ * Contains Your Module un/installation hook implementations.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function restrict_customer_install() {}
+
+/**
+ * Implements hook_uninstall().
+ */
+function restrict_customer_uninstall() {}
+
+/**
+ * Implements hook_schema().
+ */ 
+
+function restrict_customer_schema() {}
+

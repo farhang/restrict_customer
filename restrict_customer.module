@@ -1,0 +1,41 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ * Contains necessary hook implementations, callbacks & helpers.
+ */
+
+/**
+ * Implement hook_help().
+ */
+
+/**
+ * Implements hook_init().
+ */
+function restrict_customer_init() {
+  // Check the current for front 
+  if (drupal_is_front_page()) {
+    $indexpos = strpos(request_uri(), 'index.php');
+    
+    //  if index.php does'nt exist in the url then return blank page in root.
+    if (!$indexpos) {
+      die();
+    }
+  }
+}
+
+/**
+ * Implements hook_perm().
+ */
+function restrict_customer_perm() {}
+
+/**
+ * Implements hook_menu().
+ */
+function restrict_customer_menu() {}
+
+/**
+ * Implementation of hook_cron().
+ */
+function restrict_customer_cron() {}
